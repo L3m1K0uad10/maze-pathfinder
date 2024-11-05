@@ -1,0 +1,59 @@
+
+.sideBar {
+    width: 50%;
+    height: 100%;
+}
+
+h3 {
+    padding-bottom: 40px;
+}
+
+.sideBar div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+select {
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px;
+    border: 1px solid var(--customed-pink);
+}
+
+#algorithms {
+    margin-left: 31px;
+}
+
+.button {
+    padding: 10px 40px;
+    margin-bottom: 10px;
+}
+
+.start-btn {
+    background-color: var(--customed-purple);
+    border-color: var(--customed-purple);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.start-btn:hover {
+    color: var(--customed-purple);
+    background-color: white;
+}
+
+.reset-btn {
+    background-color: var(--customed-pink);
+    border-color: var(--customed-pink);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reset-btn:hover {
+    color: var(--customed-pink);
+    background-color: white;
+}
