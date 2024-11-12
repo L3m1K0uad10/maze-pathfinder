@@ -29,12 +29,35 @@ html, body , #root {
 .app-main-container {
     width: 60%;
     height: 70%;
-    border: 2px solid var(--customed-purple);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     border-radius: .5rem;
     padding: 20px;
+}
+
+/* Light Theme */
+.Light {
+    background-color: #fff;
+    color: #333;
+    /* border: 2px solid var(--customed-purple); */
+}
+
+.app-main-container.Light {
+    border: 2px solid white;
+    box-shadow: .4em .4em #6f6e6eac, -.4em 0 .4em #6f6e6eac;
+}
+
+/* Dark Theme */
+.Dark {
+    background-color: #333;
+    color: #fff;
+    /* border: 2px solid var(--customed-pink); */
+}
+
+
+.app-main-container.Dark {
+    border: 2px solid black;
 }
 

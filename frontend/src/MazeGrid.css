@@ -1,0 +1,45 @@
+/* MazeGrid.css */
+.maze-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+  
+.maze-row {
+    display: flex;
+    gap: 3px; /* Space between cells horizontally */
+}
+  
+.maze-cell {
+    width: 18px;
+    height: 18px;
+    background-color: white; /* Default color for path cells */
+}
+  
+.maze-cell.path {
+    background-color: #6734F2;
+}
+  
+.maze-cell.wall {
+    background-color: #333;
+}
+  
+.maze-cell.start {
+    background-color: green;
+}
+  
+.maze-cell.end {
+    background-color: red;
+}
+  
+/* Space between rows */
+.maze-row + .maze-row {
+    margin-top: 3px;
+}
+
+/* DARK MODE */
+.maze-cell.wall.Dark {
+    background-color: white;
+}
+  

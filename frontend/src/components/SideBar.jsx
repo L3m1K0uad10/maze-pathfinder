@@ -3,11 +3,37 @@ import React from "react";
 import "../SideBar.css";
 
 
-function SideBar() {
+function SideBar({ onThemeChange }) {
+
+	const handleThemeChange = (event) => {
+		console.log("Radio button clicked:", event.target.value);
+		onThemeChange(event.target.value);
+	}
 
     return (
         <div className = "sideBar">
         	<h3>PathFinder - Visualizer</h3>
+			
+			<form action="">
+				<input 
+					type = "radio" 
+					name = "theme" 
+					id = "light" 
+					value = "Light"
+					onChange = {handleThemeChange}
+					defaultChecked
+				/>
+				<label htmlFor = "" style = {{paddingRight: "20px", paddingLeft: "10px"}}>Light</label>
+
+				<input 
+					type = "radio" 
+					name = "theme" 
+					id="dark" 
+					value = "Dark" 
+					onChange = {handleThemeChange}
+				/>
+				<label htmlFor = "" style = {{paddingLeft: "10px"}}>Dark</label>
+			</form>
 
 			<div>
 				<form action = "">
