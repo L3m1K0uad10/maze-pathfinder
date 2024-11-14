@@ -18,7 +18,7 @@
 }
   
 .maze-cell.path {
-    background-color: #6734F2;
+    background-color: white;
 }
   
 .maze-cell.wall {
@@ -43,3 +43,6 @@
     background-color: white;
 }
   
+.maze-cell.path.Dark {
+    background-color: black;
+}
